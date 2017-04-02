@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zum-j3-klC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEn-Jf-Yen" userLabel="leftView1">
+                                        <rect key="frame" x="8" y="0.0" width="175.5" height="128"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVT-El-f07" userLabel="rightView2">
+                                        <rect key="frame" x="191.5" y="0.0" width="175.5" height="128"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uEn-Jf-Yen" secondAttribute="trailing" priority="750" constant="8" id="Cer-nH-Lhk"/>
+                                    <constraint firstAttribute="bottom" secondItem="OVT-El-f07" secondAttribute="bottom" id="F7c-HJ-dwB"/>
+                                    <constraint firstAttribute="height" constant="128" id="Hxy-wa-9LN"/>
+                                    <constraint firstItem="OVT-El-f07" firstAttribute="leading" secondItem="uEn-Jf-Yen" secondAttribute="trailing" constant="8" id="Jl5-nQ-2UW"/>
+                                    <constraint firstItem="OVT-El-f07" firstAttribute="top" secondItem="Zum-j3-klC" secondAttribute="top" id="U9O-fb-vRD"/>
+                                    <constraint firstAttribute="bottom" secondItem="uEn-Jf-Yen" secondAttribute="bottom" id="Wo5-nm-PIO"/>
+                                    <constraint firstItem="OVT-El-f07" firstAttribute="width" secondItem="uEn-Jf-Yen" secondAttribute="width" id="fqW-4B-xat"/>
+                                    <constraint firstItem="uEn-Jf-Yen" firstAttribute="leading" secondItem="Zum-j3-klC" secondAttribute="leading" constant="8" id="ji9-vR-WFB"/>
+                                    <constraint firstAttribute="trailing" secondItem="OVT-El-f07" secondAttribute="trailing" priority="750" constant="8" id="ku7-w6-aBt"/>
+                                    <constraint firstItem="uEn-Jf-Yen" firstAttribute="top" secondItem="Zum-j3-klC" secondAttribute="top" id="t42-7n-k8H"/>
+                                </constraints>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zOp-4Z-VfT">
+                                <rect key="frame" x="163" y="196" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchLayout:" destination="BYZ-38-t0r" eventType="valueChanged" id="vBp-EJ-dpz"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zum-j3-klC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P1o-TN-UxQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Zum-j3-klC" secondAttribute="trailing" id="enc-vB-bmT"/>
+                            <constraint firstItem="Zum-j3-klC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fCX-S2-vjS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueRightLayout" destination="ku7-w6-aBt" id="Fo1-hS-f1g"/>
+                        <outlet property="sender" destination="zOp-4Z-VfT" id="HN3-A9-yTo"/>
+                        <outlet property="viewSpace" destination="Jl5-nQ-2UW" id="byR-75-baS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="314" y="40"/>
+        </scene>
+    </scenes>
+</document>
