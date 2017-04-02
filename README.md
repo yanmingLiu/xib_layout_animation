@@ -2,4 +2,4 @@
 XIB添加动画
 
 
- ![image](https://github.com/yanmingLiu/xib_layout_animation/raw/master/Untitled.gif)
+ ![image](https://github.com/yanmingLiu/xib_layout_animation/blob/master/xibLayout/xibLayout/Untitled.gif)
